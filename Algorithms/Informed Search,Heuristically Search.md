@@ -10,10 +10,30 @@
 
 但也有只依靠h(n)，进行搜索的算法，比如：greedy best-first search （GBS）（贪婪最佳优先搜索）
 
-#### Greedy best-first search（贪婪最佳优先搜索）
+### Greedy best-first search（贪婪最佳优先搜索）
 * 在该算法下f(n) = h(n)
 * 在有限状态空间的搜索是完备的其他状态则不是。
 * 算法十分简单，在通常情况下，可以很快的达到目标，但在某些比较特殊的情况下，复杂度会与DFS相同。
 
 ### A*算法
 A* 是一种结合了UCS和启发式算法的算法。很多时候，A*中的f(n) = g(n)+h(n)
+
+在优先队列里维护的是f(n)，然后相同的做广搜即可。
+
+## 其他
+
+其实看起来，所谓的一致代价搜索，启发式搜索，都大同小异，只不过搜索的顺序的策略有了一些变化罢了。
+
+## 参考连接
+
+[启发式搜索]
+
+[A*寻路算法]
+
+[启发式搜索]:<https://blog.csdn.net/Suyebiubiu/article/details/101208545>
+[A*寻路算法]:<https://www.cnblogs.com/ysherlock/p/7822313.html?tdsourcetag=s_pctim_aiomsg>
+
+
+
+
+
